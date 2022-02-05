@@ -1,0 +1,143 @@
+body{
+    background-color: var(--bg-color);
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100vh;
+}
+.navbar{
+    border-bottom: 1px solid black;
+    padding: 1.5rem var(--spacing3) ;
+    display: flex;
+    align-items: center;
+}
+.brand-name{
+    font-size: var(--fs3);
+}
+.hamburger-menu{
+    padding: 0 0.5rem 0 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.navbar a h1{
+    display: inline;
+    margin-left: var(--spacing3);
+    padding:1rem 0.5rem 1rem 0;
+}
+
+.action-icons{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing6);
+    margin-right: 10px;
+}
+.action-icons .icon-container{
+    font-size: 1rem;
+}
+.action-icons .icons{
+    padding: 0.5rem;
+}
+
+/* main content */
+.main-content{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: larger;
+}
+/* login container */
+.login-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    gap:10px;
+    box-shadow: 4px 4px 12px rgb(0, 00, 0,24%);
+    background-color:var(--white);
+    color: var(--primary-color);
+}
+.login-container a {
+    text-decoration: none;
+}
+.login-container .block-inputs{
+    display: block;
+    border-radius: var(--br-small);
+    padding:5px 2px;
+}
+::placeholder{
+    padding: 0 12px;
+    font-family: "Outfit";
+    letter-spacing: 1px;
+}
+/* forget button */
+.btn-forgot{
+    color: var(--secondary-color);
+}
+.btn-forgot:hover{
+    color: black;
+}
+/* login button */
+.btn-login{
+    text-align: center;
+}
+.login-container .btn-login{
+    padding: 8px 0;
+}
+/* sign up btn*/
+.btn-sign-up{
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* media queries */
+
+
+@media screen and (min-width:600px) {
+    .login-container{
+        width: 24rem;
+    }
+    .action-icons .icon-container{
+        font-size: 1.2rem;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width:750px) {
+    .login-container{
+        width: 29rem;
+    }
+    .action-icons .icon-container{
+        font-size: 1.6rem;
+        
+    }
+    .action-icons{
+        gap: 1.2rem;
+    }
+    .brand-name{
+        font-size: var(--fs2);
+    }
+    .hamburger-menu{
+        font-size: 1.4rem;
+    }
+    .login-container .block-inputs{
+        display: block;
+        border-radius: var(--br-small);
+        padding:12px 2px;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+}
