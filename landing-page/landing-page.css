@@ -1,0 +1,264 @@
+body{
+    background-color: var(--bg-color);
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.navbar{
+    margin-bottom: 5px;
+    padding: 1.3rem var(--spacing3) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.brand-name{
+    font-size: var(--fs3);
+}
+/* searchbar */
+.search-bar{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.search-bar i{
+    margin-left: 4px;
+    color: gray;
+}
+.search-bar input{
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 100%;
+    border: none;
+    
+}
+.search-bar-desktop{
+    display: none;
+}
+/* hamburger menu */
+.hamburger-menu{
+    padding: 0 0.5rem 0 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.navbar a h1{
+    display: inline;
+    margin-left: var(--spacing3);
+    padding:1rem 0.5rem 1rem 0;
+}
+
+.action-icons{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: var(--spacing6);
+    margin-right: 10px;
+}
+.action-icons .icon-container{
+    font-size: 1rem;
+}
+.action-icons .icons{
+    padding: 0.5rem;
+}
+
+/* main content */
+.main-content{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: larger;
+}
+
+/* hero image */
+.hero-img{
+    width: 100%;
+    min-height: 15rem;
+    /* border: 1px solid black; */
+    margin-top: var(--spacing4);
+    position: relative;
+}
+.img-tint{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.349);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img .welcome-modal{
+   border-radius: 0;
+   background-color: rgba(0, 0, 0, 0.863);
+   color: white;
+   width: 25rem;
+   gap: 1rem;
+}
+.welcome-modal .card-title{
+    font-size: var(--fs3);
+}
+.welcome-modal .card-subtitle{
+    font-size: .8rem;
+}
+.welcome-modal .btn{
+    background-color: white;
+    font-family: "Outfit";
+    color: var(--primary-color);
+}
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.section-title{
+    margin-top: 1rem;
+    font-size: var(--fs1);
+    text-align: center;
+    border-bottom: 1px solid gainsboro;
+}
+/* Promotional */
+.promotional-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.promotional-section .card-vertical{
+    width: 10.5rem;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+    margin-right: 9.75px;
+    margin-left: 9.75px;
+    padding-bottom: .5rem;
+}
+/* promotional cards */
+.promotional-section .product-img-box{
+    height: auto;
+    width: 100%;
+}
+.product-img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.promotional-section .card-title{
+    font-size: var(--fs4);
+    text-align: center;
+}
+.promotional-section a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    text-align: right;
+    margin-right: 4px;
+}
+.promotional-section a:hover{
+    color: gray;
+}
+
+.card-description{
+    display: none;
+}
+
+
+
+
+
+
+/* media queries */
+
+
+@media screen and (min-width:600px) {
+    .action-icons .icon-container{
+        font-size: 1.2rem;
+        gap: 20px;
+    }
+    /* promotional cards */
+    .promotional-section .card-vertical{
+     width: 12rem;
+    }
+}
+
+
+@media screen and (min-width:750px) {
+    .action-icons .icon-container{
+        font-size: 1.6rem;
+        
+    }
+    .action-icons{
+        gap: 1.2rem;
+    }
+    .brand-name{
+        font-size: var(--fs2);
+    }
+    .hamburger-menu{
+        font-size: 1.4rem;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+    .search-bar input{
+        padding: 1rem;
+    }
+    .search-bar i{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width:1100px) {
+    .page-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-bar-desktop{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: auto
+    }
+    .search-bar-desktop input{
+        border: none;
+        padding: 10px;
+        width: 24rem;
+    }
+    .search-bar-desktop i {
+        margin-left: 3px;
+        color: gray;
+    }
+    .search-bar-desktop input:focus{
+        outline: none;
+    }
+    /* card-section */
+    .promotional-section .card-vertical{
+        width: 17rem;
+    }
+    .promotional-section .card-vertical .card-title{
+        font-size: var(--fs3);
+        margin-bottom: 2rem;
+    }
+    .card-vertical .card-description{
+        text-align: center;
+        display: block;
+    }
+}
