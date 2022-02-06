@@ -27,6 +27,9 @@ body{
     background-color: white;
     border: 1px solid var(--primary-color);
 }
+.search-bar:focus{
+    border: none;
+}
 .search-bar i{
     margin-left: 4px;
     color: gray;
@@ -198,5 +201,8 @@ body{
     .search-bar-desktop i {
         margin-left: 3px;
         color: gray;
+    }
+    .search-bar-desktop:focus{
+        border: none;
     }
 }
