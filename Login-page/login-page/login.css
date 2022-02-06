@@ -11,7 +11,9 @@ body{
     padding: 1.3rem var(--spacing3) ;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-bottom: 6px;
+    border-bottom: 1px solid rgb(207, 207, 207);
 }
 .brand-name{
     font-size: var(--fs3);
@@ -23,6 +25,7 @@ body{
     display: flex;
     align-items: center;
     background-color: white;
+    border: 1px solid var(--primary-color);
 }
 .search-bar i{
     margin-left: 4px;
@@ -34,6 +37,9 @@ body{
     width: 100%;
     border: none;
     
+}
+.search-bar-desktop{
+    display: none;
 }
 /* hamburger menu */
 .hamburger-menu{
@@ -160,11 +166,37 @@ body{
     ::placeholder{
         font-size: 1rem;
     }
+    .search-bar input{
+        padding: 1rem;
+    }
+    .search-bar i{
+        font-size: 1.3rem;
+    }
 }
+
 
 @media screen and (min-width:1100px) {
     .page-container{
         width: 80%;
         margin: 0 auto;
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-bar-desktop{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: auto
+    }
+    .search-bar-desktop input{
+        border: none;
+        padding: 10px;
+        width: 24rem;
+    }
+    .search-bar-desktop i {
+        margin-left: 3px;
+        color: gray;
     }
 }
