@@ -90,36 +90,11 @@ body{
     margin-top: var(--spacing4);
     position: relative;
 }
-.img-tint{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.349);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.hero-img .card-container{
+    display: none;
 }
-.hero-img .welcome-modal{
-   border-radius: 0;
-   background-color: rgba(0, 0, 0, 0.863);
-   color: white;
-   width: 25rem;
-   gap: 1rem;
-}
-.welcome-modal .card-title{
-    font-size: var(--fs3);
-}
-.welcome-modal .card-subtitle{
-    font-size: .8rem;
-}
-.welcome-modal .btn{
-    background-color: white;
-    font-family: "Outfit";
-    color: var(--primary-color);
-}
+
 .hero-img img{
     width: 100%;
     height: 100%;
@@ -127,7 +102,6 @@ body{
 }
 .section-title{
     margin-top: 1rem;
-    font-size: var(--fs1);
     text-align: center;
     border-bottom: 1px solid gainsboro;
 }
