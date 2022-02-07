@@ -11,6 +11,12 @@ body{
 .breakr-top{
     border-top: 1px solid gainsboro;
 }
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: var(--bg-color);
+}
 
 .navbar{
     margin-bottom: 5px;
@@ -20,8 +26,7 @@ body{
     justify-content: center;
     padding-bottom: 6px;
     border-bottom: 1px solid rgb(207, 207, 207);
-    position: sticky;
-    top: 0;
+    
 }
 .brand-name{
     font-size: var(--fs3);
@@ -145,11 +150,12 @@ body{
     padding: 0;
     flex-direction: row;
     gap: 0;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
 .cart-item .img-box{
-    width: 192px;
+    width: 11rem;
     /* border: 1px solid black; */
 }
 .cart-item .img-box img{
@@ -168,6 +174,9 @@ body{
 }
 .cart-item select{
     max-width: 2.3rem;
+}
+.cart-item .card-description{
+    display: none;
 }
 .cart-item h1{
     margin-top: var(--spacing3);
@@ -294,5 +303,8 @@ body{
     }
     .cart-item .card-detail h2{
         font-size: 2.2rem;
+    }
+    .cart-item .card-detail p{
+        display: block;
     }
 }
