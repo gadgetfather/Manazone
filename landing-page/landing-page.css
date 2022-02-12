@@ -41,13 +41,6 @@ body{
 .search-bar-desktop{
     display: none;
 }
-/* hamburger menu */
-.hamburger-menu{
-    padding: 0 0.5rem 0 0;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-}
 .navbar a {
     text-decoration: none;
     color: var(--primary-color);
@@ -182,6 +175,9 @@ body{
 .categories .card-container .btn{
     color: white;
     text-align: center;
+}
+.categories a{
+    margin: 0;
 }
 
 
