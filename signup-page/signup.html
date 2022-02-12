@@ -8,54 +8,60 @@
     <link rel="stylesheet" href="/signup-page/signup.css">
     <link rel="stylesheet" href="https://mana-ui.netlify.app/component.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <title>Sign-up</title>
+    <title>Sign-up | Manazone</title>
 </head>
 
 <body>
     <div class="page-container">
         <!-- navbar -->
-        <nav >
+        <nav>
             <div class="navbar">
                 <span class="hamburger-menu"><i class="fas fa-bars"></i></span>
-            <a class="brand-name" href="#">
-                <h1>Manazone</h1>
-            </a>
-            <div class="search-bar-desktop">
-                <i class="fas fa-search"></i>
-                <input type="search">
-      
-            </div>
-            <div class="action-icons">
-                <div class="icon-container">
-                    <i class="icons fas fa-shopping-cart"></i>
-                    <span class="icon-badge">0</span>
+                <a class="brand-name" href="#">
+                    <h1>Manazone</h1>
+                </a>
+                <div class="search-bar-desktop">
+                    <i class="fas fa-search"></i>
+                    <input type="search">
+
                 </div>
-                <div class="icon-container">
-                    <i class="icons fas fa-heart"></i>
-                    <span class="icon-badge">0</span>
+                <div class="action-icons">
+                    <a href="/Login-page/login-page/login.html" class="icon-container">
+                        <i class="icons fas fa-user"></i>
+                        <span class="icon-badge">0</span>
+                    </a>
+
+                    <a href="/cart-page/cart.html" class="icon-container">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="icon-badge">0</span>
+                    </a>
+                    <a href="/wishlist/wishlist.html" class="icon-container">
+                        <i class="icons fas fa-heart"></i>
+                        <span class="icon-badge">0</span>
+                    </a>
                 </div>
-            </div>
             </div>
             <div class="search-bar">
                 <i class="fas fa-search"></i>
                 <input type="search">
-      
+
             </div>
-         </nav>
-         
+        </nav>
+
         <!-- main content -->
         <main class="main-content">
             <div class="form-container">
                 <h1>Signup</h1>
                 <label for="username">Email address:</label>
                 <input class="block-inputs" placeholder="jack@gmail.com" type="text">
-                <label  for="password">password:</label>
+                <label for="password">password:</label>
                 <input class="block-inputs" placeholder="*****" type="text">
                 <p><input type="checkbox"> I accept all Terms & Conditions</p>
                 <a class="btn-submit btn btn-primary" href="#">Create New Account</a>
-                <a class="btn-submit-secondary" href="#">Already have an account <i class="fas fa-chevron-right"></i></a>
+                <a class="btn-submit-secondary" href="/Login-page/login-page/login.html">Already have an account <i
+                        class="fas fa-chevron-right"></i></a>
             </div>
-            
+
         </main>
     </div>
 
