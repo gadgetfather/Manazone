@@ -1,0 +1,206 @@
+body{
+    background-color: var(--bg-color);
+}
+.page-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.navbar{
+    margin-bottom: 5px;
+    padding: 1.3rem var(--spacing3) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+.brand-name{
+    font-size: var(--fs3);
+}
+/* searchbar */
+.search-bar{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.search-bar i{
+    margin-left: 4px;
+    color: gray;
+}
+.search-bar input{
+    padding: 10px 10px;
+    border-radius: 2px;
+    width: 100%;
+    border: none;
+    
+}
+.search-bar-desktop{
+    display: none;
+}
+/* hamburger menu */
+.hamburger-menu{
+    padding: 0 0.5rem 0 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+.navbar a h1{
+    display: inline;
+    margin-left: var(--spacing3);
+    padding:1rem 0.5rem 1rem 0;
+}
+
+.action-icons{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: var(--spacing6);
+    margin-right: 10px;
+}
+.action-icons .icon-container{
+    font-size: 1rem;
+}
+.action-icons .icons{
+    padding: 0.5rem;
+}
+
+/* main content */
+.main-content{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: larger;
+}
+/* login container */
+.form-container{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 4rem;
+    gap:10px;
+    box-shadow: 4px 4px 12px rgb(0, 00, 0,24%);
+    background-color:var(--white);
+    color: var(--primary-color);
+}
+.form-container a {
+    text-decoration: none;
+}
+.form-container .block-inputs{
+    display: block;
+    border-radius: var(--br-small);
+    padding:5px 2px;
+}
+::placeholder{
+    padding: 0 12px;
+    font-family: "Outfit";
+    letter-spacing: 1px;
+}
+/* forget button */
+.btn-forgot{
+    color: var(--secondary-color);
+}
+.btn-forgot:hover{
+    color: black;
+}
+/* login button */
+.btn-submit{
+    text-align: center;
+}
+.form-container .btn-submit{
+    padding: 8px 0;
+}
+/* sign up btn*/
+.btn-submit-secondary{
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* media queries */
+
+
+@media screen and (min-width:600px) {
+    .form-container{
+        width: 24rem;
+    }
+    .action-icons .icon-container{
+        font-size: 1.2rem;
+        gap: 20px;
+    }
+}
+
+
+@media screen and (min-width:750px) {
+    .form-container{
+        width: 29rem;
+    }
+    .action-icons .icon-container{
+        font-size: 1.6rem;
+        
+    }
+    .action-icons{
+        gap: 1.2rem;
+    }
+    .brand-name{
+        font-size: var(--fs2);
+    }
+    .hamburger-menu{
+        font-size: 1.4rem;
+    }
+    .form-container .block-inputs{
+        display: block;
+        border-radius: var(--br-small);
+        padding:12px 2px;
+    }
+    ::placeholder{
+        font-size: 1rem;
+    }
+    .search-bar input{
+        padding: 1rem;
+    }
+    .search-bar i{
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (min-width:1100px) {
+    .page-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-bar-desktop{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: auto
+    }
+    .search-bar-desktop input{
+        border: none;
+        padding: 10px;
+        width: 24rem;
+    }
+    .search-bar-desktop i {
+        margin-left: 3px;
+        color: gray;
+    }
+    .search-bar-desktop input:focus{
+        outline: none;
+    }
+}
