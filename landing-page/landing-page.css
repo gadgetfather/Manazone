@@ -176,6 +176,9 @@ body{
     color: white;
     text-align: center;
 }
+.categories a{
+    margin: 0;
+}
 
 
 /* media queries */
