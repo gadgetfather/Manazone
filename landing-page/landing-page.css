@@ -32,7 +32,7 @@ body{
     color: gray;
 }
 .search-bar input{
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 2px;
     width: 100%;
     border: none;
@@ -74,7 +74,6 @@ body{
 
 /* main content */
 .main-content{
-    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,7 +84,6 @@ body{
 .hero-img{
     width: 100%;
     min-height: 15rem;
-    /* border: 1px solid black; */
     margin-top: var(--spacing4);
     position: relative;
 }
