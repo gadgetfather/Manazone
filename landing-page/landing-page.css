@@ -8,11 +8,10 @@ body{
 }
 .navbar{
     margin-bottom: 5px;
-    padding: 1.3rem var(--spacing3) ;
+    padding: 1.3rem var(--spacing3) 6px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 6px;
     border-bottom: 1px solid rgb(207, 207, 207);
 }
 .brand-name{
@@ -92,9 +91,28 @@ body{
 }
 
 .hero-img .card-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width:11rem;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    transform: translate(-50%,-50%);
+}
+.hero-img .card-container h1{
+    font-size: 1rem;
+}
+.hero-img .card-container .btn-primary{
+    padding: 0.2rem .4rem;
+    font-size: 1rem;
+}
+.hero-img p{
     display: none;
 }
-
 .hero-img img{
     width: 100%;
     height: 100%;
@@ -150,9 +168,23 @@ body{
     display: none;
 }
 
+/* categories*/
+.categories .product-img-box{
+    position: relative;
+}
+.categories .card-container .product-img-box h1{
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+}
 
-
-
+.categories .card-container{
+    padding-bottom: 0;
+}
+.categories .card-container .btn{
+    color: white;
+    text-align: center;
+}
 
 
 /* media queries */
@@ -193,6 +225,22 @@ body{
     .search-bar i{
         font-size: 1.3rem;
     }
+    /* hero img */
+    .hero-img .card-container{
+        width: 20rem;
+    }
+    .hero-img .card-container h1{
+        font-size: 1.4rem;
+    }
+    .hero-img .card-container p{
+        font-size: 1.2rem;
+        display: block;
+    }
+    .hero-img .card-container .btn-primary{
+        padding: 0.5rem 0.7rem;
+        font-size: 1.2rem;
+    }
+
 }
 
 
