@@ -40,13 +40,7 @@
 .search-bar-desktop{
     display: none;
 }
-/* hamburger menu */
-.hamburger-menu{
-    padding: 0 0.5rem 0 0;
-    font-size: 1.2rem;
-    display: none;
-    align-items: center;
-}
+
 .navbar a {
     text-decoration: none;
     color: var(--primary-color);
