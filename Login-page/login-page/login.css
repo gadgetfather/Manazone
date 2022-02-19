@@ -71,7 +71,6 @@ body{
 
 /* main content */
 .main-content{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +79,6 @@ body{
 }
 /* login container */
 .login-container{
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     padding: 3rem 4rem;
@@ -185,7 +183,9 @@ body{
         align-items: center;
         background-color: white;
         margin-top: 10px;
-        margin-left: auto
+        margin-left: auto;
+        border: 1px solid gainsboro;
+
     }
     .search-bar-desktop input{
         border: none;

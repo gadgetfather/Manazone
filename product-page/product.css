@@ -85,12 +85,10 @@ aside .btn{
 /* main content */
 
 .main-content{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     font-size: larger;
     position: relative;
-    /* border: 1px solid black; */
 }
 /* product */
 .product-section{
@@ -232,7 +230,8 @@ body.noscroll{
         background-color: white;
         margin-top: 10px;
         margin-left: auto;
-        border: 1px solid black;
+        border: 1px solid gainsboro;
+
     }
     .search-bar-desktop input{
         border: none;
