@@ -63,8 +63,9 @@ body{
 .action-icons .icon-container{
     font-size: 1rem;
 }
-.action-icons .icons{
-    padding: 0.5rem;
+.action-icons .icon-badge{
+    top:-3px;
+    right: -11px;
 }
 
 /* main content */
