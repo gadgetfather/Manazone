@@ -75,8 +75,9 @@ nav{
 .action-icons .icon-container{
     font-size: 1rem;
 }
-.action-icons .icons{
-    padding: 0.5rem;
+.action-icons .icon-badge{
+    top:-3px;
+    right: -11px;
 }
 
 .page-title{
@@ -235,9 +236,7 @@ nav{
 
 
 @media screen and (min-width:1100px) {
-    html{
-        font-size: 1.15rem;
-    }
+    
     .page-container{
         width: 80%;
         margin: 0 auto;

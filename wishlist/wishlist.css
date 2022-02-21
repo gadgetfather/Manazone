@@ -61,8 +61,9 @@
 .action-icons .icon-container{
     font-size: 1rem;
 }
-.action-icons .icons{
-    padding: 0.5rem;
+.action-icons .icon-badge{
+    top:-3px;
+    right: -11px;
 }
 
 .page-title{
@@ -77,11 +78,9 @@
 }
 /* main content */
 .main-content{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     font-size: larger;
-    /* border: 1px solid black; */
 }
 /* wishlist */
 .wishlist-section{
@@ -161,7 +160,9 @@
         align-items: center;
         background-color: white;
         margin-top: 10px;
-        margin-left: auto
+        margin-left: auto;
+        border: 1px solid gainsboro;
+
     }
     .search-bar-desktop input{
         border: none;
